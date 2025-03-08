@@ -37,7 +37,7 @@ local function highlightPlayer(player)
         RunService.RenderStepped:Connect(function()
             if character.PrimaryPart then
                 local distance = (LocalPlayer.Character.PrimaryPart.Position - character.PrimaryPart.Position).magnitude
-                distanceText.Text = string.format("Расстояние: %.1f", distance)
+                distanceText.Text = string.format("%.1f", distance)
             end
         end)
     end
